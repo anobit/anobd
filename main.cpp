@@ -93,8 +93,8 @@ void __fastcall TForm1::ConnectBtnClick(TObject *Sender)
 //---------------------------------------------------------------------------
 void __fastcall TForm1::SendBtnClick(TObject *Sender)
 {
-if(BtSocket != NULL)
-	/*if(BtSocket->Connected){
+/*if(BtSocket != NULL)
+	if(BtSocket->Connected){
 		TByteDynArray * myArray = new TByteDynArray();
 		myArray->set_length(CommandEdit->Text.Length());
 		for(int i = 0; i<CommandEdit->Text.Length();i++){
