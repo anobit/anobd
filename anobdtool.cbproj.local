@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.051,X:\Projekte\main.fmx=C:\Users\AnoBit\Documents\Embarcadero\Studio\Projekte\Unit1.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.809,X:\Projekte\anobd-tool\main.fmx=X:\Projekte\main.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.809,X:\Projekte\anobd-tool\main.h=X:\Projekte\main.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.419,X:\Projekte\anobd-tool\anobd.h=C:\Users\AnoBit\Documents\Embarcadero\Studio\Projekte\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.051,X:\Projekte\main.cpp=C:\Users\AnoBit\Documents\Embarcadero\Studio\Projekte\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.809,X:\Projekte\anobd-tool\main.cpp=X:\Projekte\main.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.933,X:\Projekte\anobd-tool\anobdtool.cbproj=X:\Projekte\anobd-tool\anobd-tool.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.051,X:\Projekte\main.h=C:\Users\AnoBit\Documents\Embarcadero\Studio\Projekte\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.280,=C:\Users\AnoBit\Documents\Embarcadero\Studio\Projekte\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.895,=C:\Users\AnoBit\Documents\Embarcadero\Studio\Projekte\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.400,X:\Projekte\anobd-tool\anobd-tool.cbproj=C:\Users\AnoBit\Documents\Embarcadero\Studio\Projekte\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.805,=C:\Users\AnoBit\Documents\Embarcadero\Studio\Projekte\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.682,=C:\Users\AnoBit\Documents\Embarcadero\Studio\Projekte\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.233,=C:\Users\AnoBit\Documents\Embarcadero\Studio\Projekte\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.509,=C:\Users\AnoBit\Documents\Embarcadero\Studio\Projekte\Project1PCH1.h</Transaction>
+  </Transactions>
+</BorlandProject>
