@@ -27,9 +27,11 @@ __published:	// Von der IDE verwaltete Komponenten
 	TLabel *Label1;
 	TButton *SendBtn;
 	TEdit *CommandEdit;
+	TLabel *Label2;
 	void __fastcall FormShow(TObject *Sender);
 	void __fastcall ConnectBtnClick(TObject *Sender);
 	void __fastcall SendBtnClick(TObject *Sender);
+	void __fastcall Timer1Timer(TObject *Sender);
 private:	// Benutzer-Deklarationen
 public:		// Benutzer-Deklarationen
 	__fastcall TForm1(TComponent* Owner);

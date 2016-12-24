@@ -5,6 +5,14 @@
     </ProjectExtensions>
     <ItemGroup Condition="'$(Platform)'=='iOSDevice32'"/>
     <ItemGroup Condition="'$(Platform)'=='Android'">
+        <DeployFile Include="D:\Projekte\anobd\Android\Debug\classes.dex" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>anobdtool\classes\</RemoteDir>
+            <RemoteName>classes.dex</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_640x480.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>anobdtool\res\drawable-large\</RemoteDir>
             <RemoteName>splash_image.png</RemoteName>
@@ -69,14 +77,6 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_72x72.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>anobdtool\res\drawable-hdpi\</RemoteDir>
-            <RemoteName>ic_launcher.png</RemoteName>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
         <DeployFile Include="X:\Projekte\anobd-tool\Android\Debug\classes.dex" Condition="'$(Config)'=='Debug'">
             <RemoteDir>anobdtool\classes\</RemoteDir>
             <RemoteName>classes.dex</RemoteName>
@@ -93,6 +93,14 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_72x72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>anobdtool\res\drawable-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_960x720.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>anobdtool\res\drawable-xlarge\</RemoteDir>
             <RemoteName>splash_image.png</RemoteName>
@@ -100,6 +108,15 @@
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include=".\Android\Debug\libanobdtool.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>anobdtool\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libanobdtool.so</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
         </DeployFile>
         <DeployFile Include="$(BDS)\lib\android\debug\mips\libnative-activity.so" Condition="'$(Config)'=='Debug'">
             <RemoteDir>anobdtool\library\lib\mips\</RemoteDir>
@@ -141,15 +158,6 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include=".\Android\Debug\libanobdtool.so" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>anobdtool\library\lib\armeabi-v7a\</RemoteDir>
-            <RemoteName>libanobdtool.so</RemoteName>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-            <Required>True</Required>
-        </DeployFile>
     </ItemGroup>
     <ItemGroup Condition="'$(Platform)'=='Win32'">
         <DeployFile Include="$(BDS)\bin\cc32220mt.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'">
@@ -163,14 +171,6 @@
         <DeployFile Include="$(BDS)\bin\cc32220.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'">
             <RemoteDir>anobdtool\</RemoteDir>
             <RemoteName>cc32220.dll</RemoteName>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include=".\Win32\Debug\anobd-tool.tds" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>anobdtool\</RemoteDir>
-            <RemoteName>anobd-tool.tds</RemoteName>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>

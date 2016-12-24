@@ -89,19 +89,52 @@ void __fastcall TForm1::ConnectBtnClick(TObject *Sender)
 
 
 
+String BaToStr(TBytes bytes){
+	String out = "";
+	for(int i=0;i<bytes.Length;i++){
+		out += bytes[i];
+	}
+	return out;
+}
+
+
 
 //---------------------------------------------------------------------------
 void __fastcall TForm1::SendBtnClick(TObject *Sender)
 {
-/*if(BtSocket != NULL)
+
+if(BtSocket != NULL)
 	if(BtSocket->Connected){
-		TByteDynArray * myArray = new TByteDynArray();
-		myArray->set_length(CommandEdit->Text.Length());
+		//TBytes * myArray = new TBytes((AnsiString(CommandEdit->Text).c_str()));
+		TBytes myArray;
+
+		myArray.set_length(CommandEdit->Text.Length());
 		for(int i = 0; i<CommandEdit->Text.Length();i++){
-			myArray[i] = (AnsiString(CommandEdit->Text)).c_str()[i];
+			myArray[i] = (unsigned char)(AnsiString(CommandEdit->Text)).c_str()[i];
 		}
 
-		BtSocket->SendData(CommandEdit->Text.c_str());
-	}        */
+		BtSocket->SendData(myArray);
+        LogMemo->Lines->Add("Sent: " + CommandEdit->Text);
+	}
+
 }
 //---------------------------------------------------------------------------
+void __fastcall TForm1::Timer1Timer(TObject *Sender)
+{
+if(BtSocket != NULL) {
+	if(BtSocket->Connected){
+		TBytes received;
+		received = BtSocket->ReceiveData(90);
+		if(received.Length > 0)
+			LogMemo->Lines->Add("Received: "+ BaToStr(received));
+		Label2->Text = "Online";
+	}else
+        Label2->Text = "Offline, but Socket exists??";
+}
+else
+	Label2->Text = "Offline";
+
+}
+//---------------------------------------------------------------------------
+
+
